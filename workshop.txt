@@ -35,4 +35,4 @@ Only English text so far; translations welcome.
 Available on GitHub: [url=https://github.com/RoberTnf/eu5-auto-event-choices]github.com/RoberTnf/eu5-auto-event-choices[/url]. Bug reports, translations and pull requests welcome.
 
 [h2]AI use disclaimer[/h2]
-This mod was developed with the help of AI (Claude, by Anthropic): much of the script and GUI code was written with AI assistance. Every feature was designed, reviewed and tested in game by me.
+This mod was developed with the help of AI (Claude): much of the script and GUI code was written with AI assistance. Every feature was designed, reviewed and tested in game by me.
