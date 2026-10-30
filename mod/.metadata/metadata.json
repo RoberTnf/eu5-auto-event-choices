@@ -1,0 +1,13 @@
+{
+    "name": "Auto Event Choices",
+    "id": "auto_event_choices",
+    "version": "1.0.0",
+    "game_id": "eu5",
+    "supported_game_version": "1.4.*",
+    "short_description": "Click the cog next to an event option to always pick it. Remembered per save; resolves repeat events for you.",
+    "tags": [
+        "User Interface"
+    ],
+    "relationships": [],
+    "game_custom_data": {}
+}

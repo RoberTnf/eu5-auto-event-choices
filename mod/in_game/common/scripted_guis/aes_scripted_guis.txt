@@ -1,0 +1,50 @@
+﻿# Auto Event Choices
+# Remembered choices live in the country variable map `aes_choices` (saved with the game):
+#   key   = flag:<event key>          e.g. flag:flavor_tuscany.5
+#   value = flag:opt_<letter>         e.g. flag:opt_b (option whose name ends in ".b")
+
+# True when scope:aes_option is the remembered choice for scope:aes_event (drives the bright cog).
+aes_is_auto = {
+	scope = country
+	saved_scopes = { aes_event aes_option }
+
+	is_shown = {
+		has_variable_map = aes_choices
+		"variable_map(aes_choices|scope:aes_event)" ?= scope:aes_option
+	}
+}
+
+# Same, but only while automation isn't suspended: drives the actual auto-select.
+aes_should_auto = {
+	scope = country
+	saved_scopes = { aes_event aes_option }
+
+	is_shown = {
+		NOT = { has_variable = aes_suspended }
+		has_variable_map = aes_choices
+		"variable_map(aes_choices|scope:aes_event)" ?= scope:aes_option
+	}
+}
+
+# Clicking the cog: remember this option for this event, or forget it if it was already remembered.
+aes_toggle = {
+	scope = country
+	saved_scopes = { aes_event aes_option }
+
+	effect = {
+		if = {
+			limit = {
+				has_variable_map = aes_choices
+				"variable_map(aes_choices|scope:aes_event)" ?= scope:aes_option
+			}
+			remove_from_variable_map = { name = aes_choices key = scope:aes_event }
+		}
+		else = {
+			if = {
+				limit = { has_variable_map = aes_choices }
+				remove_from_variable_map = { name = aes_choices key = scope:aes_event }
+			}
+			add_to_variable_map = { name = aes_choices key = scope:aes_event value = scope:aes_option }
+		}
+	}
+}

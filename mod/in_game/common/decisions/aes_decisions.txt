@@ -1,0 +1,78 @@
+﻿# Auto Event Choices: forget every remembered event choice (events will pop up normally again).
+aes_reset_auto_event_choices = {
+	decision_category = government_decisions
+	hide_repeatable_tag = yes
+
+	potential = {
+		is_ai = no
+		has_variable_map = aes_choices
+	}
+
+	allow = {
+		always = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+
+	option = {
+		name = aes_reset_auto_event_choices.a
+		effect = {
+			clear_variable_map = aes_choices
+		}
+	}
+}
+
+# Auto Event Choices: pause automation without forgetting anything. Remembered events pop up again
+# (with a bright cog), so single events can be unticked.
+aes_suspend_auto_event_choices = {
+	decision_category = government_decisions
+	hide_repeatable_tag = yes
+
+	potential = {
+		is_ai = no
+		has_variable_map = aes_choices
+		NOT = { has_variable = aes_suspended }
+	}
+
+	allow = {
+		always = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+
+	option = {
+		name = aes_suspend_auto_event_choices.a
+		effect = {
+			set_variable = aes_suspended
+		}
+	}
+}
+
+aes_resume_auto_event_choices = {
+	decision_category = government_decisions
+	hide_repeatable_tag = yes
+
+	potential = {
+		is_ai = no
+		has_variable = aes_suspended
+	}
+
+	allow = {
+		always = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+
+	option = {
+		name = aes_resume_auto_event_choices.a
+		effect = {
+			remove_variable = aes_suspended
+		}
+	}
+}

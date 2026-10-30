@@ -1,0 +1,32 @@
+[h1]Auto Event Choices[/h1]
+
+Tired of clicking the same button for the 40th time? Every event option now has a small [b]cog[/b] next to it.
+
+[list]
+[*][b]Click the cog[/b] next to an option: that option is chosen right away, and from now on, whenever that event fires again, it is chosen for you automatically.
+[*][b]Remembered per save[/b]: choices are stored in your save game, so each campaign has its own list.
+[*][b]Works on normal and expedition events.[/b]
+[/list]
+
+[h2]Changing your mind[/h2]
+Three decisions (Government category) appear once you have remembered at least one choice. They act instantly, no confirmation window:
+[list]
+[*][b]Suspend Automatic Event Choices[/b]: remembered events pop up normally again (with a glowing cog). Click the glowing cog to stop automating that one event. Your other choices are kept.
+[*][b]Resume Automatic Event Choices[/b]: turn automation back on.
+[*][b]Reset Automatic Event Choices[/b]: forget everything.
+[/list]
+
+[h2]Good to know[/h2]
+[list]
+[*]The event window flashes for a moment before the remembered option is picked.
+[*]Options are recognised by their internal name, so a remembered choice keeps working when an event shows a different set of options. A few options can't be told apart reliably (about 3% of events have one); those simply have no cog.
+[*]If the remembered option isn't available this time (its conditions aren't met), the event simply pops up as normal.
+[*]Age and omen events are not affected.
+[*]Safe to add or remove mid-campaign.
+[*]Multiplayer: each player has their own choices.
+[/list]
+
+[h2]Compatibility[/h2]
+Compatible with Glorp UI. The event window is not replaced: only the two event option templates are overridden, so other event window mods keep working unless they change the option buttons themselves. Replaces [i]in_game/gui/decisionwindow.gui[/i], so it is not compatible with other mods that replace the decision window (whichever loads last wins).
+
+Only English text so far; translations welcome.

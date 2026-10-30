@@ -1,0 +1,12 @@
+﻿l_russian:
+ AES_TOGGLE_TT: "Always choose this option when this event fires again in this save"
+ AES_TOGGLE_ON_TT: "This option is chosen automatically for this event. Click to stop"
+ aes_reset_auto_event_choices.title: "Reset Automatic Event Choices"
+ aes_reset_auto_event_choices.desc: "Forget every event option set to be chosen automatically. Those events will pop up normally again."
+ aes_reset_auto_event_choices.a: "Reset"
+ aes_suspend_auto_event_choices.title: "Suspend Automatic Event Choices"
+ aes_suspend_auto_event_choices.desc: "Events with a remembered option pop up normally again, so you can review them or click the cog to stop automating one. Your remembered choices are kept."
+ aes_suspend_auto_event_choices.a: "Suspend"
+ aes_resume_auto_event_choices.title: "Resume Automatic Event Choices"
+ aes_resume_auto_event_choices.desc: "Remembered event options are chosen automatically again."
+ aes_resume_auto_event_choices.a: "Resume"
