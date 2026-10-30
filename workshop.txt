@@ -30,3 +30,9 @@ Three decisions (Government category) appear once you have remembered at least o
 Compatible with Glorp UI. The event window is not replaced: only the two event option templates are overridden, so other event window mods keep working unless they change the option buttons themselves. Replaces [i]in_game/gui/decisionwindow.gui[/i], so it is not compatible with other mods that replace the decision window (whichever loads last wins).
 
 Only English text so far; translations welcome.
+
+[h2]Source code[/h2]
+Available on GitHub: [url=https://github.com/RoberTnf/eu5-auto-event-choices]github.com/RoberTnf/eu5-auto-event-choices[/url]. Bug reports, translations and pull requests welcome.
+
+[h2]AI use disclaimer[/h2]
+This mod was developed with the help of AI (Claude, by Anthropic): much of the script and GUI code was written with AI assistance. Every feature was designed, reviewed and tested in game by me.
